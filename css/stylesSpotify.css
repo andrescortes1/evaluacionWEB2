@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: url(../img/spotifyFondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor{
+    background-color: #fff;
+    width: 80%;
+    margin-top: 50px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 60px 50px 60px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slide{
+    width: 70%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.contenedor-descripcion{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.contenedor-canciones{
+    width: 80%;
+    margin-top: 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    padding: 10px 10px 10px 10px;
+}
+
+.contenedor-canciones h2{
+    font-size: 22px;
+}
+
+.contenedor-canciones h5{
+    font-weight: 300;
+}
+
+.boton{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.boton a{
+    text-decoration: none;
+    background-color: rgb(47, 47, 255);
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width:500px){
+    .slide{
+        width: 100%;
+    }
+    .contenedor-descripcion{
+        width: 100%;
+    }
+    .contenedor-canciones{
+        width: 100%;
+    }
+
+    .boton a{
+        font-size: 11px;
+    }
+}

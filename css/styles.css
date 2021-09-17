@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+/*HEADER*/
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(to top, hsla(180, 63%, 50%, 0.5) 0%, hsla(267, 86%, 22%, 0.5) 100%), url(../img/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.header .navbar{
+    background-color: transparent;
+}
+
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+/*CONOCEME*/
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.contenedor-conoceme{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-conoceme img{
+    width: 40%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.contenedor-conoceme p{
+    width: 45%;
+}
+
+/*HERRAMIENTA*/
+
+.herramientas{
+    background-color: rgb(221, 220, 220);
+}
+
+.contenedor-herramientas{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    position: relative;
+    cursor: pointer;
+}
+
+.imagen img{
+    width: 35%;
+    margin-top: 10px;
+}
+
+.conocimiento{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.utilidad{
+    font-size: 20px;
+}
+
+.hover-herramientas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    background-color: rgba(0, 0, 0, .9);
+    color: #fff;
+}
+
+.imagen:hover .hover-herramientas{
+    transform: scale(1);
+}
+
+/*SPOTIFY*/
+
+.spotify{
+    background-color: rgb(17, 17, 17);
+}
+
+.contenedor-spotify{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.spotiText{
+    color: #fff;
+}
+
+.contenedor-spotify img{
+    width: 40%;
+}
+
+.texto-boton{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.texto-boton a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    background-color: #1DB954;
+    height: 35px;
+    border-radius: 5px;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: rgb(68, 68, 68);
+    padding-bottom: .1px;
+    color: #fff;
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    flex-direction: column;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-top: 15px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 10px;    
+}
+
+@media screen and (max-width:800px){
+    .titulo{
+        font-size: 40px;
+    }
+
+    .contenedor-conoceme img{
+        width: 80%;
+    }
+    .contenedor-conoceme p{
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .imagen{
+        width: 45%;
+    }
+
+    .imagen h2{
+        font-size: 30px;
+    }
+
+    .conocimiento{
+        font-size: 25px;
+    }
+
+    .utilidad{
+        font-size: 15px;
+    }
+
+    .contenedor-spotify img{
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .contenedor-spotify p{
+        width: 110%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .imagen{
+        width: 80%;
+    }
+
+    .imagen h2{
+        font-size: 30px;
+    }
+
+    .conocimiento{
+        font-size: 25px;
+    }
+
+    .utilidad{
+        font-size: 15px;
+    }
+}
